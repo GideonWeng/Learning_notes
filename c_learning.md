@@ -1,7 +1,12 @@
 # C learning notes
 Create date: 2019-2-21  
 Author: Gideon
---------
+---
+[Contents](#c-learning-notes)
+- [1. what does `\0` stand for?](#1-what-does-\0-stand-for)  
+- [2. If the return value type is omitted from the function definition, the default is the `int` type.](#2-if-the-return-value-type-is-omitted-from-the-function-definition-the-default-is-the-int-type)
+- [3. Type of #define variables?](#3-type-of-define-variables)
+---
 
 ## 1. what does `\0` stand for?  
 
