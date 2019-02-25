@@ -9,6 +9,7 @@
 - [4. keyword `extern`](#4-keyword-extern)
 - [5. keyword `static`](#5-keyword-static)
 - [6. Initialization](#6-Initialization)
+- [7. Macro Substitution](#7-Macro-Substitution)
 ---
 
 ## 1. what does `\0` stand for?  
@@ -91,5 +92,5 @@ Question: what is the type of `0`?
     ```
     In this case, the array size is five (four characters plus the terminating '\0').
 
-    # 7. Macro Substitution
+    ## 7. Macro Substitution
     Substitutions are made only for tokens, and do not take place within quoted strings. For example, if `YES` is a defined name, there would be no substitution in `printf("YES")` or in `YESMAN`.
