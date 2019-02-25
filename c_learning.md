@@ -90,3 +90,6 @@ Question: what is the type of `0`?
     char pattern[] = { 'o', 'u', 'l', 'd', '\0' };
     ```
     In this case, the array size is five (four characters plus the terminating '\0').
+
+    # 7. Macro Substitution
+    Substitutions are made only for tokens, and do not take place within quoted strings. For example, if `YES` is a defined name, there would be no substitution in `printf("YES")` or in `YESMAN`.
