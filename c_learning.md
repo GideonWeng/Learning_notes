@@ -1,11 +1,12 @@
 # C learning notes
-Create date: 2019-2-21  
-Author: Gideon
+**Create date:** 2019-2-21  
+**Author:** Gideon
 ---
-[Contents](#c-learning-notes)
+[C learning notes](#c-learning-notes)
 - [1. what does `\0` stand for?](#1-what-does-\0-stand-for)  
 - [2. If the return value type is omitted from the function definition, the default is the `int` type.](#2-if-the-return-value-type-is-omitted-from-the-function-definition-the-default-is-the-int-type)
 - [3. Type of #define variables?](#3-type-of-define-variables)
+- [4. keyword 'extern'](#4-keyword-extern)
 ---
 
 ## 1. what does `\0` stand for?  
@@ -62,3 +63,6 @@ Note that while the preprocessor has no concept of type, there is no reason that
 ```c
 #define MAXLINE    ((int)5000)
 ```
+## 4. keyword 'extern'
+In all source files of a source program, an external variable can only be defined **once** in a file, while other files can be accessed through an `extern` declaration (the source file defining the external variable can also contain `extern` statement of a external variable). The length of the array **must be** specified in the definition of the external variable, but the `extern` declaration does not have to specify the length of the array.  
+在一个源程序的所有源文件中，一个外部变量只能在某个文件中*定义***一次**，而其他文件可以通过`extern`声明来访问它（定义外部变量的源文件中也可以包含对该外部变量的`extern`声明）。外部变量的定义中必须指定数组的长度，但`extern`声明则不一定要指定数组的长度。
