@@ -10,6 +10,7 @@
 - [5. keyword `static`](#5-keyword-static)
 - [6. Initialization](#6-Initialization)
 - [7. Macro Substitution](#7-Macro-Substitution)
+- [8. Unary operator `&`](#8-Unary-operator-&)
 - [REFERENCE](#REFERENCE)
 ---
 
@@ -93,9 +94,15 @@ Question: what is the type of `0`?
     ```
     In this case, the array size is five (four characters plus the terminating '\0').
 
-    ## 7. Macro Substitution
+## 7. Macro Substitution
     Substitutions are made only for tokens, and do not take place within quoted strings. For example, if `YES` is a defined name, there would be no substitution in `printf("YES")` or in `YESMAN`.
 
+## 8. Unary operator `&`
+The unary operator `&` gives the address of an object, so the statement:
+```c
+p = &c;
+```
+assigns the address of `c` to the variable `p`, and `p` is said to "point to" `c`. The `&` operator only applies to objects in memory: variables and array elements. It cannot be applied to expressions, constants, or `register` variables.
 
 # REFERENCE
 1. [自动变量](https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F)
