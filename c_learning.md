@@ -11,6 +11,7 @@
 - [6. Initialization](#6-Initialization)
 - [7. Macro Substitution](#7-Macro-Substitution)
 - [8. Unary operator `&`](#8-Unary-operator-&)
+- [9. No explicit Boolean type in c89](#9-No-explicit-Boolean-type-in-c89)
 - [REFERENCE](#REFERENCE)
 ---
 
@@ -103,6 +104,16 @@ The unary operator `&` gives the address of an object, so the statement:
 p = &c;
 ```
 assigns the address of `c` to the variable `p`, and `p` is said to "point to" `c`. The `&` operator only applies to objects in memory: variables and array elements. It cannot be applied to expressions, constants, or `register` variables.
+
+## 9. No explicit Boolean type in c89
+What evaluates to FALSE in C?  
+- **0 (integer)**
+- NULL (a special kind of pointer: more on this later) 
+-  No explicit Boolean type  
+
+What evaluates to TRUE in C?
+-  Anything that isn’t false is true
+-  Same idea as in Python: only 0s or empty sequences are false, anything else is true!
 
 # REFERENCE
 1. [自动变量](https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F)
