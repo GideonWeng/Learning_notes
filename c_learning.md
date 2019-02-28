@@ -12,6 +12,7 @@
 - [7. Macro Substitution](#7-Macro-Substitution)
 - [8. Unary operator `&`](#8-Unary-operator-&)
 - [9. No explicit Boolean type in c89](#9-No-explicit-Boolean-type-in-c89)
+- [10. unary operator `*`](#10-unary-operator-*)
 - [REFERENCE](#REFERENCE)
 ---
 
@@ -114,6 +115,9 @@ What evaluates to FALSE in C?
 What evaluates to TRUE in C?
 -  Anything that isn’t false is true
 -  Same idea as in Python: only 0s or empty sequences are false, anything else is true!
+
+## 10. unary operator `*`
+The unary operator `*` is the *indirection or dereferencing operator*; when applied to a pointer, it accesses the object the pointer points to. 
 
 # REFERENCE
 1. [自动变量](https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F)
