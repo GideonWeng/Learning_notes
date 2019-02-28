@@ -13,6 +13,7 @@
 - [8. Unary operator `&`](#8-Unary-operator-&)
 - [9. No explicit Boolean type in c89](#9-No-explicit-Boolean-type-in-c89)
 - [10. unary operator `*`](#10-unary-operator-*)
+- [11. `*` and `&` bind more tightly](#11*-and-&-bind-more-tightly)
 - [REFERENCE](#REFERENCE)
 ---
 
@@ -118,6 +119,25 @@ What evaluates to TRUE in C?
 
 ## 10. unary operator `*`
 The unary operator `*` is the *indirection or dereferencing operator*; when applied to a pointer, it accesses the object the pointer points to. 
+
+## 11.`*` and `&` bind more tightly
+The unary operators `*` and `&` bind more tightly than arithmetic operators, so the assignment
+```c
+y = *ip + 1
+```
+takes whatever `ip` points at, adds `1`, and assigns the result to `y`, while
+```c
+*ip += 1
+```
+increments what `ip` points to, as do
+```c
+++*ip
+```
+and
+```c
+(*ip)++
+```
+The parentheses are necessary in this last example; without them, the expression would increment `ip` instead of what it points to, because unary operators like `*` and `++` associate right to left.
 
 # REFERENCE
 1. [自动变量](https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F)
