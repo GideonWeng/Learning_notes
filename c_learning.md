@@ -13,7 +13,8 @@
 - [8. Unary operator `&`](#8-Unary-operator-&)
 - [9. No explicit Boolean type in c89](#9-No-explicit-Boolean-type-in-c89)
 - [10. unary operator `*`](#10-unary-operator-*)
-- [11. `*` and `&` bind more tightly](#11*-and-&-bind-more-tightly)
+- [11. `*` and `&` bind more tightly](#11-*-and-&-bind-more-tightly)
+- [12. Valid Pointer Arithmetic](#12-Valid-Pointer-Arithmetic)
 - [REFERENCE](#REFERENCE)
 ---
 
@@ -120,7 +121,7 @@ What evaluates to TRUE in C?
 ## 10. unary operator `*`
 The unary operator `*` is the *indirection or dereferencing operator*; when applied to a pointer, it accesses the object the pointer points to. 
 
-## 11.`*` and `&` bind more tightly
+## 11. `*` and `&` bind more tightly
 The unary operators `*` and `&` bind more tightly than arithmetic operators, so the assignment
 ```c
 y = *ip + 1
@@ -138,6 +139,18 @@ and
 (*ip)++
 ```
 The parentheses are necessary in this last example; without them, the expression would increment `ip` instead of what it points to, because unary operators like `*` and `++` associate right to left.
+
+## 12. Valid Pointer Arithmetic
+- Add an integer to a pointer.
+- Subtract2pointers(inthesamearray)
+- Compare pointers (<, <=, ==, !=, >, >=)
+- Compare pointer to NULL (indicates that the pointer points to nothing)
+
+Everything else illegal since makes no sense:
+- adding two pointers
+- multiplying pointers
+- subtract pointer from integer
+
 
 # REFERENCE
 1. [自动变量](https://zh.wikipedia.org/wiki/%E8%87%AA%E5%8A%A8%E5%8F%98%E9%87%8F)
