@@ -142,7 +142,7 @@ The parentheses are necessary in this last example; without them, the expression
 
 ## 12. Valid Pointer Arithmetic
 - Add an integer to a pointer.
-- Subtract2pointers(inthesamearray)
+- Subtract 2 pointers **(in the same array)**
 - Compare pointers (<, <=, ==, !=, >, >=)
 - Compare pointer to NULL (indicates that the pointer points to nothing)
 
